@@ -6,9 +6,55 @@ body{
     background-color: hsl(233, 47%, 7%);
     color: hsl(0, 0%, 100%);
     margin: 0 auto; 
-    padding-top: 5%;
+    padding-top: 6.5%;
     font-family: Arial;
 }
+.full-container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.left-container{
+    width: 50%;
+}
+.right-container{
+    position: relative;
+    width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.right-container-image{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.right-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: .4;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 - Very dark blue (main background): hsl(233, 47%, 7%)
